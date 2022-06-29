@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:url" content="http://3.34.45.179/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="(사)행복나눔장애인복지협회">
+        <meta property="og:description" content="(사)행복나눔장애인복지협회">
+        <meta property="og:image" content="http://3.34.45.179/img/nanum_icon.jpg">
+        <title>(사)행복나눔장애인복지협회</title>
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=541d55e771a70ae0ccc13015843d09b5"></script>
+        <script type="text/javascript" src="index.js?ver=1.02"></script>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index.css?ver=1.01"/>
+    </head>
+    <body>
+        <!-- header -->
+        <div class="w3-top">
+            <div class="w3-container w3-white w3-mobile">
+                <a href="http://3.34.45.179/" class="w3-button w3-hover-white w3-xlarge"><img src="img/nanum_icon.jpg" class="nanum-icon"> (사)행복나눔장애인복지협회</a>
+            </div>
+            <div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
+                <ul class="w3-indigo">
+                    <li class="dropdown">
+                        <a class="dropbtn">회사소개</a>
+                        <div class="dropdown-content">
+                            <a href="#greet">인사말</a>
+                            <a href="#wayto">오시는길</a>
+                            <a href="#organ">조직도</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn">사업소개</a>
+                        <div class="dropdown-content">
+                            <a href="#consolation">군장병 위문</a>
+                            <a href="#disabled">장애인 복지</a>
+                            <a href="#poor">불우이웃 돕기</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn">갤러리</a>
+                        <div class="dropdown-content">
+                            <a href="#eventimg" onclick='scroll("eventimg")'>행사자료</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <!-- 인사말 -->
+            <div class="w3-row-padding w3-padding-64 w3-container" id="greet">
+                <div class="w3-content">
+                    <h1>주거복지 인사말</h1>
+                    <p class="w3-large">안녕하세요. </p>
+                    <p class="w3-large">사단법인 한국장애인노인주거복지협회 회장 유근춘입니다.</p>
+                    <p class="w3-large">본 법인은 사회적 취약계층인 장애인, 노인의 주거 복지 향상을 위하여 노력하고 있습니다.</p>
+                    <p class="w3-large">다양한 행사와 나눔을 통하여 사회적 가치를 구현하는데 앞장서오고 있습니다.</p>
+                    <p class="w3-large">같이 성장하고 행복한 가치를 누리는 것이 한국장애인노인주거복지협회가 추구하는 목표입니다.</p>
+                    <p class="w3-large">감사합니다.</p>
+                    <p class="w3-large w3-right-align">회장 유근춘</p>
+                </div>
+            </div>
+            <!-- 오시는길 -->
+            <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="wayto" >
+                <div class="w3-content">
+                    <h1>오시는길 안내</h1>
+                    <div class="w3-half w3-left">
+                        <div class="map" id="map"></div>
+                    </div>
+                    <div class="w3-half w3-padding-16 w3-padding-large">
+                        <p class="w3-xlarge">(사)행복나눔장애인복지협회</p>
+                        <i class="fas fa-map-marker-alt"><span class="w3-large"> 주소</span></i>
+                        <p class="w3-large">인천광역시 미추홀구 소성로 235 2층</p>
+                        <i class="fas fa-phone"><span class="w3-large"> 전화번호</span></i>
+                        <p class="w3-large">032-876-0557</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 조직도 -->
+            <div class="w3-row-padding w3-padding-64 w3-container" id="organ">
+                <div class="w3-content">
+                    <h1>조직도</h1>
+                    <div class="w3-card">
+                        <img src="img/organization.PNG" class="organization">
+                    </div>
+                </div>
+            </div>
+            <!-- 군장병 위문 -->
+            <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="consolation">
+                <div class="w3-content">
+                    <h1>군장병 위문</h1>
+                    <div class="w3-panel w3-padding-16 w3-card-4 w3-blue-gray">전방 6사단을 방문해 추운 날씨에 나라를 위해 헌신하는 군 장병들에게도 겨울용 캥거루 장갑 200켤레 전달</div>
+                </div>
+            </div>
+            <!-- 장애인 복지 -->
+            <div class="w3-row-padding w3-padding-64 w3-container" id="disabled">
+                <div class="w3-content">
+                    <h1>장애인 복지</h1>
+                    <div class="w3-panel w3-padding-16 w3-card-4 w3-blue-gray">인천광역시 서구, 부평구, 계양구 불우한 이웃과 장애우들에게 송편 40Kg과 컵라면 30박스 전달</div>
+                    <div class="w3-panel w3-padding-16 w3-card-4 w3-blue-gray">인천광역시 부평구를 방문해 불우한 장애우들에게 장갑 200켤레를 전달</div>
+                </div>
+            </div>
+            <!-- 불우이웃 돕기 -->
+            <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="poor">
+                <div class="w3-content">
+                    <h1>불우이웃 돕기</h1>
+                    <div class="w3-panel w3-padding-16 w3-card-4 w3-blue-gray">미추홀구에 겨울장갑 200켤레(300만원 상당) 기탁</div>
+                    <div class="w3-panel w3-padding-16 w3-card-4 w3-blue-gray">장애인 가정 집수리를 위한 445만원 상당의 물품 후원</div>
+                    <div class="w3-panel w3-padding-16 w3-card-4 w3-blue-gray">미추홀구에 케이크 50개 기탁</div>
+                </div>
+            </div>
+            <!-- 행사자료 -->
+            <div class="w3-row-padding w3-padding-64 w3-container" id="eventimg">
+                <div class="w3-content">
+                    <h1>행사자료</h1>
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <img src="img/1.PNG" class="event">
+                            </div>    
+                        </div>
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <img src="img/2.PNG" class="event">
+                            </div>   
+                        </div>
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <img src="img/3.PNG" class="event">
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <img src="img/4.PNG" class="event">
+                            </div>   
+                        </div>
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <img src="img/5.jpg" class="event">
+                            </div>   
+                        </div>
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <img src="img/6.PNG" class="event">
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <img src="img/7.PNG" class="event">
+                            </div>   
+                        </div>
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <!--<img src="img/1.PNG" class="event">-->
+                            </div>   
+                        </div>
+                        <div class="w3-third w3-margin-top">
+                            <div class="w3-card-4">
+                                <!--<img src="img/1.PNG" class="event">-->
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="w3-container w3-padding-8 w3-black w3-center w3-opacity">  
+            <p>(사)행복나눔장애인복지협회 회장: 유근춘 주소: 인천광역시 미추홀구 소성로 235 2층 전화: 032-876-0557 사업자등록번호: 574-82-00230</p>
+            <p>Copyright (사)행복나눔장애인복지협회. All rights reserved. Powered by <a href="https://kirinit.tistory.com/" target="_blank">kirinit</a></p>
+        </div>
+    </body>
+</html>
