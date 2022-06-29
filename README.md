@@ -3,3 +3,5 @@
 순수 HTML, Javascript, CSS를 작성하여 개발 
 ## 기술스택
 카카오 맵 API, W3School 프레임워크, fontawesome 프레임워크, JQuery
+## 배포
+v1.0.0
